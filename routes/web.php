@@ -1,6 +1,9 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+Route::get('/login', function() {
+    return view('login', ['title' => 'Login']);
+})->name('login');
 
 Route::get('/', function () {
     return view('home', ['title' => 'Home Page']);
@@ -18,6 +21,3 @@ Route::get('/kontak', function () {
     return view('kontak', ['title' => 'kontak Page']);
 });
 
-Route::get('/login', function() {
-    return view('login', ['title' => 'Login']);
-})->name('login');
