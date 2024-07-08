@@ -10,7 +10,7 @@ Route::get('/', function () {
 });
 
 Route::get('/about', function () {
-    return view('about', ['nama' => 'Mats'], ['title' => 'About Page']);
+    return view('about', ['title' => 'About Page']);
 });
 
 Route::get('/blog', function () {
@@ -21,3 +21,6 @@ Route::get('/kontak', function () {
     return view('kontak', ['title' => 'kontak Page']);
 });
 
+Route::get('/quiz', function () {
+    return view('quiz-page', ['title' => 'quiz Page']);
+});
