@@ -21,7 +21,7 @@
 
 <body class="h-full">
     <div>
-        <main>
+        <main class="bg-[#FF3CAC] bg-gradient-to-r from-[#784BA0] to-[#2B86C5]">
             <div>
                 <!-- Your content -->
                 {{ $slot }}
@@ -32,3 +32,7 @@
 </body>
 
 </html>
+
+
+{{-- background-color: #FF3CAC;
+background-image: linear-gradient(225deg, #FF3CAC 0%, #784BA0 50%, #2B86C5 100%); --}}

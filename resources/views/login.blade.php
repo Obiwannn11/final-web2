@@ -1,19 +1,27 @@
 <x-login-lay>
-    <div class="px-[50vw] py-[50vh] flex flex-row justify-center">
-        <div class="bg-slate-400 p-[10rem] flex-col">KIRI</div>
-        <div class="bg-slate-500 p-[10rem] flex-col rounded-lg">
-            <div class="text-center text-[2rem] font-bold pb-[4rem]">Create Account</div>
+    <div class="h-screen flex justify-center items-center">
+        <div class="flex flex-row justify-center">
+            <div class="bg-white/25 p-[5rem] flex-col rounded-xl">
+                <div class="text-center text-[2rem] font-bold pb-[3rem] text-white">Create Account</div>
 
-            <div class="bg-slate-400 p-[3rem] flex flex-col justify-center rounded-lg">
-                <p class="text-left">Email</p>
-                <input class="rounded-lg h-[2rem] w-[19rem] text-center" type="text" id="email" required
-                    autocomplete="off">
-                <p class="text-left">Password</p>
-                <input class="rounded-lg h-[2rem] w-[19rem]" type="text" id="email" required autocomplete="off">
-                <div class="bg-slate-400 p-[1rem] text-center">SIGN UP</div>
+                <div class="bg-white p-[3rem] flex flex-col justify-center rounded-lg gap-[2rem] ">
+                    <div>
+                        <p class="text-left">Email</p>
+                        <input class="rounded-lg p-[.5rem] bg-white/10 ring-2 ring-[#2B86C5] border-none outline-none"
+                            type="text" id="email" required autocomplete="off">
+                    </div>
+                    <div>
+                        <p class="text-left">Password</p>
+                        <input class="rounded-lg p-[.5rem] bg-white/10 ring-2 ring-[#2B86C5] border-none outline-none"
+                            type="text" id="email" required autocomplete="off">
+                    </div>
+                    <div
+                        class="bg-slate-700 p-[1rem] text-center rounded-lg hover:bg-[#003C43] text-white cursor-pointer">
+                        SIGN UP
+                    </div>
+                    <p>Already have an account?<a class="hover:text-[blue]" href="#"> Sign In</a></p>
+                </div>
             </div>
         </div>
-
     </div>
-
 </x-login-lay>
