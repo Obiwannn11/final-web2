@@ -7,7 +7,6 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     @vite('resources/css/app.css')
     <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
-    <link rel="stylesheet" href="css/style.css">
     <!-- FONT -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -21,7 +20,7 @@
 
 <body class="h-full">
     <div>
-        <main class="bg-[#FF3CAC] bg-gradient-to-r from-[#784BA0] to-[#2B86C5]">
+        <main class="bg-[#00ADB5]">
             <div>
                 <!-- Your content -->
                 {{ $slot }}
