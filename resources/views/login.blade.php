@@ -17,7 +17,7 @@
                     </div>
                     <div
                         class="bg-slate-700 p-[1rem] text-center rounded-lg hover:bg-[#003C43] text-white cursor-pointer">
-                        <a href="{{ route('main-home') }}">SIGN IN</a>
+                        <a href="{{ route('home') }}">SIGN IN</a>
                     </div>
                     <p>Not have an account?<a class="hover:text-[blue]" href="{{ route('register') }}"> Register</a></p>
                 </div>

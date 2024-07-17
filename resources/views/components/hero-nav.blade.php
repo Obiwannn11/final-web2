@@ -2,7 +2,7 @@
     <header class="absolute inset-x-0 top-0 z-50 bg-transparent">
         <nav class="flex items-center justify-between p-6 lg:px-8" aria-label="Global">
             <div class="flex lg:flex-1 text-[3rem]">
-                <a href="{{ route('main-home') }}" class="-m-1.5 p-1.5 text-white  font-bold">
+                <a href="{{ route('home') }}" class="-m-1.5 p-1.5 text-white  font-bold">
                     Quiz<span class="font-extralight text-white">Test</span>
                 </a>
             </div>
@@ -30,7 +30,7 @@
             </div>
         </nav>
         <!-- Mobile menu, show/hide based on menu open state. -->
-        <div class="lg:hidden" id="modal">
+        <div class="hidden" id="modal">
             <!-- Background backdrop, show/hide based on slide-over state. -->
             <div class="fixed inset-0 z-50"></div>
             <div
@@ -38,8 +38,8 @@
                 <div class="flex items-center justify-between">
 
                     <div>
-                        <a href="#" class=" text-black font-bold">
-                            Quiz<span class="font-extralight">Text</span></a>
+                        <a href="{{ route('home') }}" class=" text-black font-bold">
+                            Quiz<span class="font-extralight">Test</span></a>
                     </div>
                     <button type="button" id="modal-closebtn" class="-m-2.5 rounded-md p-2.5 text-gray-700">
                         <span class="sr-only">Close menu</span>
@@ -60,7 +60,7 @@
                                 class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Help</a>
                         </div>
                         <div class="py-6">
-                            <a href="href={{ route('dashboard') }}"
+                            <a href="href={{ route('admin') }}"
                                 class="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Log
                                 in</a>
                         </div>
