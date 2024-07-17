@@ -1,0 +1,83 @@
+<div>
+    <header class="absolute inset-x-0 top-0 z-50 bg-transparent">
+        <nav class="flex items-center justify-between p-6 lg:px-8" aria-label="Global">
+            <div class="flex lg:flex-1 text-[3rem]">
+                <a href="{{ route('home') }}" class="-m-1.5 p-1.5 text-white  font-bold">
+                    Quiz<span class="font-extralight text-white">Test</span>
+                </a>
+            </div>
+            <div class="flex lg:hidden">
+                <button type="button" id="modal-openbtn"
+                    class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700">
+                    <span class="sr-only">Open main menu</span>
+                    <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+                        aria-hidden="true">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                    </svg>
+                </button>
+            </div>
+            <div class="hidden lg:flex lg:flex-1 lg:justify-end lg:gap-x-12 text-[3rem]">
+                <a href="{{ route('docs') }}"
+                    class="text-[1rem] font-semibold leading-6 text-white hover:bg-[#222831] px-[1rem] py-[.3rem] rounded-xl">Docs</a>
+                <a href="{{ route('about') }}"
+                    class="text-[1rem] font-semibold leading-6 text-white hover:bg-[#222831] px-[1rem] py-[.3rem] rounded-xl">About</a>
+                <a href="{{ route('help') }}"
+                    class="text-[1rem] font-semibold leading-6 text-white hover:bg-[#222831] px-[1rem] py-[.3rem] rounded-xl">Help</a>
+                <a href="{{ route('login') }}"
+                    class="text-[1rem] font-semibold leading-6 text-white hover:bg-[#222831] px-[1rem] py-[.3rem] rounded-xl">Log
+                    in <span aria-hidden="true">&rarr;</span></a>
+            </div>
+        </nav>
+        <!-- Mobile menu, show/hide based on menu open state. -->
+        <div class="hidden" id="modal">
+            <!-- Background backdrop, show/hide based on slide-over state. -->
+            <div class="fixed inset-0 z-50"></div>
+            <div
+                class="fixed inset-y-0 right-0 z-50 w-full overflow-hidden bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
+                <div class="flex items-center justify-between">
+
+                    <div>
+                        <a href="{{ route('home') }}" class=" text-black font-bold">
+                            Quiz<span class="font-extralight">Test</span></a>
+                    </div>
+                    <button type="button" id="modal-closebtn" class="-m-2.5 rounded-md p-2.5 text-gray-700">
+                        <span class="sr-only">Close menu</span>
+                        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+                            aria-hidden="true">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                        </svg>
+                    </button>
+                </div>
+                <div class="mt-6 flow-root">
+                    <div class="-my-6 divide-y divide-gray-500/10">
+                        <div class="space-y-2 py-6">
+                            <a href="href={{ route('docs') }}"
+                                class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Docs</a>
+                            <a href="href={{ route('about') }}"
+                                class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">About</a>
+                            <a href="href={{ route('help') }}"
+                                class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Help</a>
+                        </div>
+                        <div class="py-6">
+                            <a href="href={{ route('admin') }}"
+                                class="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Log
+                                in</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script>
+            const modalCloseBtn = document.getElementById("modal-closebtn");
+            const modalOpenBtn = document.getElementById("modal-openbtn");
+            const modal = document.getElementById("modal");
+
+            modalCloseBtn.addEventListener("click", () => {
+                modal.classList.add("hidden");
+            });
+            modalOpenBtn.addEventListener("click", () => {
+                modal.classList.remove("hidden");
+            });
+        </script>
+    </header>
