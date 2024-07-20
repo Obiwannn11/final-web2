@@ -2,8 +2,8 @@
     <header class="absolute inset-x-0 top-0 z-50 bg-transparent">
         <nav class="flex items-center justify-between p-6 lg:px-8" aria-label="Global">
             <div class="flex lg:flex-1 text-[3rem]">
-                <a href="{{ route('home') }}" class="-m-1.5 p-1.5 text-white  font-bold">
-                    Quiz<span class="font-extralight text-white">Test</span>
+                <a href="{{ route('main.home') }}" class="-m-1.5 p-1.5 text-white  font-bold">
+                    Quiz<span class="font-extralight text-white">App</span>
                 </a>
             </div>
             <div class="flex lg:hidden">
@@ -18,13 +18,13 @@
                 </button>
             </div>
             <div class="hidden lg:flex lg:flex-1 lg:justify-end lg:gap-x-12 text-[3rem]">
-                <a href="{{ route('docs') }}"
-                    class="text-[1rem] font-semibold leading-6 text-white hover:bg-[#222831] px-[1rem] py-[.3rem] rounded-xl">Docs</a>
-                <a href="{{ route('about') }}"
+                <a href="{{ route('auth.code') }}"
+                    class="text-[1rem] font-semibold leading-6 text-white hover:bg-[#222831] px-[1rem] py-[.3rem] rounded-xl">Join With Code</a>
+                <a href="{{ route('main.about') }}"
                     class="text-[1rem] font-semibold leading-6 text-white hover:bg-[#222831] px-[1rem] py-[.3rem] rounded-xl">About</a>
-                <a href="{{ route('help') }}"
+                <a href="{{ route('main.help') }}"
                     class="text-[1rem] font-semibold leading-6 text-white hover:bg-[#222831] px-[1rem] py-[.3rem] rounded-xl">Help</a>
-                <a href="{{ route('login') }}"
+                <a href="{{ route('auth.login') }}"
                     class="text-[1rem] font-semibold leading-6 text-white hover:bg-[#222831] px-[1rem] py-[.3rem] rounded-xl">Log
                     in <span aria-hidden="true">&rarr;</span></a>
             </div>
@@ -38,8 +38,8 @@
                 <div class="flex items-center justify-between">
 
                     <div>
-                        <a href="{{ route('home') }}" class=" text-black font-bold">
-                            Quiz<span class="font-extralight">Test</span></a>
+                        <a href="{{ route('main.home') }}" class=" text-black font-bold">
+                            Quiz<span class="font-extralight">App</span></a>
                     </div>
                     <button type="button" id="modal-closebtn" class="-m-2.5 rounded-md p-2.5 text-gray-700">
                         <span class="sr-only">Close menu</span>
@@ -52,15 +52,15 @@
                 <div class="mt-6 flow-root">
                     <div class="-my-6 divide-y divide-gray-500/10">
                         <div class="space-y-2 py-6">
-                            <a href="href={{ route('docs') }}"
+                            <a href="href={{ route('main.docs') }}"
                                 class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Docs</a>
-                            <a href="href={{ route('about') }}"
+                            <a href="href={{ route('main.about') }}"
                                 class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">About</a>
-                            <a href="href={{ route('help') }}"
+                            <a href="href={{ route('main.help') }}"
                                 class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Help</a>
                         </div>
                         <div class="py-6">
-                            <a href="href={{ route('admin') }}"
+                            <a href="href={{ route('auth.login') }}"
                                 class="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Log
                                 in</a>
                         </div>

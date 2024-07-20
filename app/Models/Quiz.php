@@ -2,22 +2,27 @@
 
 namespace App\Models;
 
-use Illuminate\Database\Eloquent\Factories\HasFactory;
+use App\Models\Soal;
+use App\Models\User;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\Factories\HasFactory;
 
 class Quiz extends Model
 {
     use HasFactory;
     protected $fillable = [
-        'soal',
-        'pilihan1',
-        'pilihan2',
-        'pilihan3',
-        'pilihan4',
-        'type',
+        'quiz_judul',
+        'quiz_code',
+        'quiz_maker'
     ];
 
-    public function users() {
-        return $this->belongsToMany(User::class);
+    public function user()
+    {
+        return $this->belongsTo(User::class);
+    }
+
+    public function soals()
+    {
+        return $this->hasMany(Soal::class);
     }
 }
