@@ -20,9 +20,8 @@
 
 <body class="h-full">
     <div>
-        <x-hero-nav></x-hero-nav>
-        <main>
-            <div  class="bg-[#00ADB5]">
+        <main class="bg-[#00ADB5]">
+            <div>
                 <!-- Your content -->
                 {{ $slot }}
             </div>

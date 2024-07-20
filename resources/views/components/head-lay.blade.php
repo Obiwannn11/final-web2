@@ -22,7 +22,7 @@
 
 <body class="bg-[#00ADB5] font-sans leading-normal tracking-normal mt-12">
     <x-header></x-header>
-    <main class="p-[4rem]">
+    <main class="p-[5rem]">
         {{ $slot }}
     </main>
     <script>
