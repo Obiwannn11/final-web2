@@ -11,14 +11,12 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('quiz', function (Blueprint $table) { 
+        Schema::create('quizzes', function (Blueprint $table) {
             $table->id();
-            $table->string('soal');
-            $table->enum('type',['pilihan_ganda','essay']);
-            $table->string('pilihan1');
-            $table->string('pilihan2');
-            $table->string('pilihan3');
-            $table->string('pilihan4');
+            $table->foreignId('quiz_code'); // Contoh foreign key ke soal table
+            $table->string('quiz_judul');
+            // $table->bigInteger('quiz_code');
+            $table->string('quiz_maker');
             $table->timestamps();
         });
     }
@@ -28,6 +26,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('quiz');
+        Schema::dropIfExists('quizzes');
     }
 };

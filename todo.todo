@@ -1,0 +1,13 @@
+
+TO DO SEBELUM JAM 8 FINAL WEB
+
+☐ Buat Middleware untuk login
+✔ buat CRUD untuk membuat TOKEN @done(24-07-18 05:22)
+☐ Buat CRUD soal untuk setiap TOKEN atau Kategori yang dibuat
+☐ buat sistem penialian berdasarkan jawaban user
+☐ buat sistem penilaian
+☐ Murid mengakses soal Berdasarkan TOKEN soal yang dibuat guru
+☐ murid mendapatkan hasil jawaban secara live
+☐ murid mengetahui jawaban apa apa saja yang benar atau salah ( sistem accordion)
+☐ Guru mendapatkan data hasil dari seorang murid beserta jawabannya
+☐ setiap akun guru atau akun admin yang berbeda memiliki token yang berbeda beda
